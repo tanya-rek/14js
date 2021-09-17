@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, friend!</title>
+    <style>
+        .page_wrapper {
+            padding-top: 40px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .page__question {
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 35px;
+            color: rgb(1, 109, 73);
+            text-transform: uppercase;
+        }
+
+        .page__input {
+            width: 60%;
+            height: 3vw;
+            margin: 40px;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 160%;
+            color: #000000;
+            padding-left: 15px;
+        }
+    
+        .page-button {
+            width: 200px;
+            height: 84px;
+            border-radius: 40px;
+            padding: 16px 16px 16px 16px;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 35px;
+            color: #FFFFFF;
+            background-color: rgb(1, 109, 73);
+            text-transform: uppercase;
+        }
+
+        .page__greeting {
+            margin: 40px;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 160%;
+            color: #000000;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="page_wrapper">
+        <label class="page__question">Please enter your name:</label><input type="text" class="page__input" id="name">
+        <button class="page-button" type="button" onclick="showMessage()">Click me</button>
+        <div class="page__greeting" id="show-name"></div>
+    </div>
+
+    <script src="greeting.js"></script>
+</body>
+</html>
